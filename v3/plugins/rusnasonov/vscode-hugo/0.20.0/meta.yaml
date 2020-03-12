@@ -1,0 +1,23 @@
+apiVersion: v2
+publisher: rusnasonov
+name: vscode-hugo
+version: 0.20.0
+type: VS Code extension
+displayName: Hugo Helper
+title: Hugo language support
+description: This extension adds hugo support with vs code
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/rusnasonov/vscode-hugo.git
+category: Language
+firstPublicationDate: '2018-02-21'
+spec:
+  containers:
+    - image: "quay.io/eclipse/che-sidecar-go:1.12.9-652ad19"
+      name: vscode-go
+      memoryLimit: '512Mi'
+      env:
+      - name: GOPATH
+        value: /go:$(CHE_PROJECTS_ROOT)
+  extensions:
+    - vscode:extension/rusnasonov.vscode-hugo
+
