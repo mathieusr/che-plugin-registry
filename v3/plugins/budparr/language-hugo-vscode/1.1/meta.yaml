@@ -1,0 +1,22 @@
+apiVersion: v2
+publisher: budparr
+name: language-hugo-vscode
+version: 1.1
+type: VS Code extension
+displayName: Hugo Helper
+title: Hugo language support
+description: This extension adds hugo support with vs code
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/budparr/language-hugo-vscode.git
+category: Language
+firstPublicationDate: '2018-07-04'
+spec:
+  containers:
+    - image: "registry.redhat.io/codeready-workspaces/stacks-golang-rhel8"
+      name: vscode-hugo
+      memoryLimit: '512Mi'
+      env:
+      - name: GOPATH
+        value: /go:$(CHE_PROJECTS_ROOT)
+  extensions:
+    - https://budparr.gallery.vsassets.io/_apis/public/gallery/publisher/budparr/extension/language-hugo-vscode/1.1.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage

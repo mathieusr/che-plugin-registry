@@ -13,7 +13,7 @@ firstPublicationDate: '2019-09-19'
 spec:
   containers:
     - image: "quay.io/eclipse/che-sidecar-go:1.12.9-652ad19"
-      name: vscode-go
+      name: vscode-hugo
       memoryLimit: '512Mi'
       env:
       - name: GOPATH
