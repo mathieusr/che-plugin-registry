@@ -1,0 +1,19 @@
+apiVersion: v2
+publisher: Esben Petersen
+name: prettier-vscode
+version: 4.1.1
+type: VS Code extension
+displayName: Prettier - Code formatter
+title: Prettier - Code formatter
+description: Prettier Formatter for Visual Studio Code
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/budparr/language-hugo-vscode.git
+category: Language
+firstPublicationDate: '2017-01-10'
+spec:
+  containers:
+    - image: "eclipse/che-theia-endpoint-runtime:next"
+      name: prettier-vscode
+      memoryLimit: '512Mi'
+  extensions:
+    - https://esbenp.gallery.vsassets.io/_apis/public/gallery/publisher/esbenp/extension/prettier-vscode/4.1.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage
