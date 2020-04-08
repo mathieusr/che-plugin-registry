@@ -11,12 +11,5 @@ repository: https://github.com/budparr/language-hugo-vscode.git
 category: Language
 firstPublicationDate: '2018-07-04'
 spec:
-  containers:
-    - image: "registry.redhat.io/codeready-workspaces/stacks-golang-rhel8"
-      name: vscode-hugo
-      memoryLimit: '512Mi'
-      env:
-      - name: GOPATH
-        value: /go:$(CHE_PROJECTS_ROOT)
   extensions:
     - https://marketplace.visualstudio.com/_apis/public/gallery/publishers/budparr/vsextensions/language-hugo-vscode/1.1.0/vspackage
