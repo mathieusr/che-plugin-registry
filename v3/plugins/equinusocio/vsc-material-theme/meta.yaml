@@ -1,0 +1,15 @@
+apiVersion: v2
+publisher: equinusocio
+name: vsc-material-theme
+version: 30.0
+type: VS Code extension
+displayName: Material Theme
+title: The most epic theme meets Visual Studio Code
+description: The most epic theme meets Visual Studio Code
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/material-theme/vsc-material-theme/releases
+category: Language
+firstPublicationDate: "2017-06-02"
+spec:
+  extensions:
+    - https://github.com/material-theme/vsc-material-theme/releases/download/v30.0/vsc-material-theme-30.0.0.vsix
