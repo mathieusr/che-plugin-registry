@@ -19,4 +19,4 @@ spec:
       - name: GOPATH
         value: /go:$(CHE_PROJECTS_ROOT)
   extensions:
-    - https://budparr.gallery.vsassets.io/_apis/public/gallery/publisher/budparr/extension/language-hugo-vscode/1.1.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage
+    - https://marketplace.visualstudio.com/_apis/public/gallery/publishers/budparr/vsextensions/language-hugo-vscode/1.1.0/vspackage
